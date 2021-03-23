@@ -1,2 +1,2 @@
 # site
- primeiro repositorio versonado
+ primeiro repositorio versonado e primeiro comit feito
