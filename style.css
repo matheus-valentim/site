@@ -31,28 +31,37 @@ p, .navbar a, footer a {
     font-size: 1.2em;
 }
 /*navbar*/
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1B2035;
-    font-family: Arial, Helvetica, sans-serif;
+.navbar {
+    width: 100%;
+    background: #1b2035bd;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
-.navbar a, .icon {
+.navbar label, #hamburger {
+    display: none; 
+}
+.itens { 
+    display:flex;
+}
+.itens a {
+    padding: 1em 2em;
+    color: white;
     text-decoration: none;
-    color: blanchedalmond;
-    padding: 1em 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-
+    text-align: center;
+    font-size: 1.2em;
+  }
+.itens a:hover {
+    background: #1b2035bd;
 }
 svg {
     fill: white;
+    margin: 1em 2em;
 }
-.navbar a:hover:not(.icon) {
-    background-color: #555;
-}
+
+
+
 /*elementos container*/
 header {
     
@@ -82,23 +91,11 @@ body {
 .container a {
     text-decoration: none;
 }
-.intro {
-    grid-area: intro;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .pythonjscontainer {
     grid-area: pythonjsicon;
     border-left: 0.1em solid white;
     border-top: 0.1em solid white;
-;
 }
-
 .pythoncontent {
     grid-area: pythoncontent;
     text-align: justify;
@@ -185,5 +182,31 @@ footer h2 {
     "conteudoweb"
     "ingles"
     "footer";
+    }
+    .navbar label { 
+        display: inline-block; 
+        color: white;
+        background: yellow;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 0.9em;
+    }
+      .navbar {
+        display: block;
+    }
+      svg {
+        display: none;
+    }
+      .itens a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+      .itens {
+          display: none;
+    }
+      .navbar input:checked ~ .itens {
+          display: block;
     }
 }
