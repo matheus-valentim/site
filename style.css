@@ -169,18 +169,18 @@ footer h2 {
     10px 10px 10px blue;
     transition: 0.3s;
 }
-@media screen and (max-width:780px) {
-.container {
-    grid-template-rows: repeat(1fr *8);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "banner"
-    "pythonjsicon"
-     "js"
-    "pythoncontent"
-     "webicon"
-    "conteudoweb"
-    "ingles"
-    " footer";
-}
+@media only screen and (max-width:780px) {
+    .container {
+        grid-template-rows: repeat(1fr *8);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "banner"
+        "pythonjsicon"
+        "js"
+        "pythoncontent"
+        "webicon"
+        "conteudoweb"
+        "ingles"
+        " footer";
+    }
 }
