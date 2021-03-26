@@ -17,19 +17,14 @@ p {
     padding: 0.2em;
     font-weight: 500;
 }
-header p {
-    font-weight: 300;
-}
 h2 {
     font-size: 2em;
     font-family: 'Libre Baskerville', serif;
     text-shadow: 0 0 6px blue;
-    
 }
 h2:not(footer h2) {
     border-bottom: 0.2px solid blanchedalmond;
 }
-/*elementos compostos*/
 p, .navbar a, footer a {
     font-size: 1.2em;
 }
@@ -42,6 +37,7 @@ p, .navbar a, footer a {
     display: flex;
     justify-content: space-between;
 }
+
 .navbar label, #hamburger {
     display: none; 
 }
@@ -58,12 +54,7 @@ p, .navbar a, footer a {
 .itens a:hover {
     background: #1b2035bd;
 }
-svg {
-    fill: white;
-    margin: 1em 2em;
-}
-
-/*elementos container*/
+/*header*/
 header {
     height: 50vh;
     width: 100%;  
@@ -74,12 +65,17 @@ header {
     flex-flow: column;
     justify-content: center;
 }
+header p {
+    font-weight: 300;
+}
+/*background*/
 body {
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(space2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
 }
+/*container*/
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,6 +125,7 @@ body {
     grid-area: webicon;
     border-top: 0.1em solid white;
 }
+/*footer*/
 footer {
     grid-area: footer;
     display: flex;
@@ -141,10 +138,16 @@ footer nav {
 }
 footer a, footer p {
     margin: 0.5em;
+    font-family: sans-serif;
 }
 footer h2 {
     margin-top: 0.2em;
 }
+.email-svg {
+    width: 2.5em;
+    height: 2.5em;
+}
+/*efeitos container*/
 .conteinercontent1, .conteinercontent2, .conteinercontent3 {
     margin: 5.5em;
     border-radius: 15px;
@@ -186,6 +189,7 @@ footer h2 {
     "ingles"
     "footer";
     }
+    /*elementos simples*/
     h1 {
         font-size: 3em;
     }
@@ -196,8 +200,9 @@ footer h2 {
         font-size: 2em;
     }
     p, .navbar a, footer a {
-        font-size: 0.8em;
+       font-size: 0.8em;
     }
+    /*navbar*/
     .navbar label { 
         display: inline-block; 
         color: white;
@@ -205,13 +210,13 @@ footer h2 {
         font-style: normal;
         font-size: 1.2em;
         padding: 0.9em;
-    }
+     }
       .navbar {
         display: block;
     }
-      svg {
-        display: none;
-    }
+      .logo {
+          display: none;
+      }
       .itens a {
         box-sizing: border-box;
         display: block;
@@ -223,8 +228,12 @@ footer h2 {
     }
       .navbar input:checked ~ .itens {
           display: block;
-    }
+    } /*conteiners*/
     .js {
         border-bottom: 0.1em solid white;
+    }
+    footer {
+        flex-flow: column;
+        text-align: center;
     }
 }
