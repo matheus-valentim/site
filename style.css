@@ -15,7 +15,7 @@ h1 {
 p {
     font-family: 'poppins';
     padding: 0.2em;
-    font-weight: 400;
+    font-weight: 500;
 }
 header p {
     font-weight: 300;
@@ -185,6 +185,18 @@ footer h2 {
     "conteudoweb"
     "ingles"
     "footer";
+    }
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-weight: 300;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p, .navbar a, footer a {
+        font-size: 0.8em;
     }
     .navbar label { 
         display: inline-block; 
