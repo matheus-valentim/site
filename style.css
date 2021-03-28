@@ -54,6 +54,11 @@ p, .navbar a, footer a {
 .itens a:hover {
     background: #1b2035bd;
 }
+.logo {
+    height: 65px;
+    width: 65px;
+    margin-left: 1.2em;
+}
 /*header*/
 header {
     height: 50vh;
@@ -70,7 +75,7 @@ header p {
 }
 /*background*/
 body {
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(space2.jpg);
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(space.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
